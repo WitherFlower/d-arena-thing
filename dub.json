@@ -1,0 +1,14 @@
+{
+	"authors": [
+		"WitherFlower"
+	],
+	"copyright": "Copyright © 2026, WitherFlower",
+	"dependencies": {
+		"numem": "~>1.6.10"
+	},
+	"description": "A minimal D application.",
+	"license": "Zlib",
+	"name": "arena",
+    "sourceFiles": ["source/c/arena.o"],
+    "preGenerateCommands": ["cd source/c && make"]
+}
