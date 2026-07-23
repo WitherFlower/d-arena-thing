@@ -136,12 +136,6 @@ class ObjectArena {
         nogc_delete(heap);
     }
 
-    // T[] allocArray(T)(size_t size) {
-    //     void* memory = heap.alloc(T.sizeof * size);
-    //     memset(memory, 0, T.sizeof * size);
-    //     return cast(T[])(cast(T*)memory)[0 .. size];
-    // }
-
     T make(T, Args...)(Args args) {
         auto o = nogc_new!T(heap: heap, args);
         debug(Arena) printf("Allocated object o with pointer %p\n", o);
