@@ -118,9 +118,6 @@ class ArenaHeap : NuHeap {
 class ObjectArena {
     @nogc:
 
-    import core.stdc.string;
-    import core.stdc.stdlib;
-
     ArenaHeap heap;
     Array!Object allocatedObjects;
 
